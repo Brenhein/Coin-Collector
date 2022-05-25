@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CoinCollector</string>
+    <string name="title">Coin Collector</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="end_game">End Game</string>
+    <string name="username">Username: </string>
+    <string name="current_score">Current Score: </string>
+    <string name="title_activity_maps">Map</string>
+</resources>

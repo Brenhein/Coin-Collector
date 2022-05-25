@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/createView"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="40dp"/>
+
+    <ImageView
+        android:id="@+id/coinImageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:src="@drawable/coinpile"/>
+
+
+    <EditText
+        android:id="@+id/passwordCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameCreate"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="@string/enter_password"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:background="@color/lightBeige"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/usernameCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:background="@color/lightBeige"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_username"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordConfirm"
+        android:layout_centerInParent="true"
+        android:onClick="onCreateAccount"
+        android:layout_margin="10dp"
+        android:text="Create Account" />
+
+    <EditText
+        android:id="@+id/passwordConfirm"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordCreate"
+        android:layout_alignParentLeft="false"
+        android:padding="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_margin="10dp"
+        android:background="@color/lightBeige"
+        android:hint="@string/confirm_password"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+</RelativeLayout>
